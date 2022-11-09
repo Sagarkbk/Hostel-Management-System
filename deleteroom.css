@@ -1,0 +1,33 @@
+body{
+	background-image: url("pic38.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.container{
+	background: white;
+	width: 250px;
+	height: 250px;
+	padding: 15px;
+	margin: auto;
+	margin-top: 100px;
+
+	
+}
+input[type=text],input[type=file],input[type=number],input[type=mail]{
+	width:100%;
+
+
+input[type=select] {
+	width:100%;
+}
+
+}
+input[type=text]:focus,input[type=password]:focus,input[type=number]:focus,input[type=mail]:focus{
+	border: 2px solid #333;
+	transition:0.6s;
+}
+input[type=submit]{
+	background:green;
+	color:white;
+	border:none;
+}

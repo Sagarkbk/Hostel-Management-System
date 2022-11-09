@@ -1,0 +1,52 @@
+
+<html>
+<head>
+	<title>Hostel Management System</title>
+	<link rel="stylesheet" href="Loginpage.css">
+<center>
+<h1 style="color:red;">WELCOME TO S&J HOSTEL
+</h1>
+</center>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+	
+	<h2>LOGIN</h2>
+	<form method="post" action="http://localhost:7036/SRKR/loginsagar.jsp">
+		<input type="text" class="input-box" placeholder="userid" required  name="id">
+		<input type="password" class="input-box" placeholder="Password" required name ="password">
+		<button type="submit" class="submit-btn">Submit</button>
+	</form>
+		<button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+</div>
+<div class="card-back">
+	<h2>REGISTER</h2>
+	<form method="post" action="http://localhost:7036/SRKR/registersagar.jsp">
+		<input type="text" class="input-box" placeholder="Your User Id" required name ="id">
+		<input type="email" class="input-box" placeholder="Your Email Id" required name ="email">
+		<input type="password" class="input-box" placeholder="Password" required name ="password">
+		<button type="submit" class="submit-btn">Submit</button>
+	</form>
+		<button type="button" class="btn" onclick="openLogin()">Already have an account</button>
+</div>
+</div>
+</div>
+</div>
+	<script>
+
+	var card = document.getElementById("card");
+	
+	function openRegister(){
+		card.style.transform = "rotateY(-180deg)";
+	}
+	function openLogin(){
+		card.style.transform = "rotateY(0deg)";
+	}
+
+
+	</script>
+</body>
+</html>
